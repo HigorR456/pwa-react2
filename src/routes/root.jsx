@@ -5,7 +5,7 @@ export default function Root() {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/service-worker.js', { scope: '/dogs' })
+        .register('/service-worker.js', { scope: '/' })
         .then((registration) => console.log('scope is: ', registration.scope));
     }
   }, []);
