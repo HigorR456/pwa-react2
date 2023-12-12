@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import {Helmet} from "react-helmet";
+
 export default function Root() {
   
   useEffect(() => {
@@ -12,6 +14,11 @@ export default function Root() {
 
     return (
       <>
+      <Helmet>
+        <title>PWA React</title>
+        <link rel="manifest" href="/manifest.json"/>
+        <meta name="theme-color" content="#700000"/>
+      </Helmet>
         <div id="sidebar">
           <h1>React Router Index</h1>
           <nav>

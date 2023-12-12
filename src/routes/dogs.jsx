@@ -21,6 +21,11 @@ export default function Dogs() {
 
     return (
         <>
+        <Helmet>
+          <title>PWA React</title>
+          <link rel="manifest" href="/manifest.json"/>
+          <meta name="theme-color" content="#700000"/>
+        </Helmet>
         <div id="sidebar">
           <h1>Dogs</h1>
           <nav>
